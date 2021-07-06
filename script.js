@@ -13,6 +13,7 @@ var recentSearch = $('#recentSearch');
 // one day weather variables
 var day = $('#day');
 var dayCity = $('#dayCity');
+var dayCurrent = $('#dayCurrent');
 var dayIcon = $('#dayIcon');
 var dayTemp = $('#dayTemp');
 var dayWind = $('#dayWind');
@@ -43,7 +44,8 @@ function getAPI() {
         })
         .then(function(data) {
             console.log(data);
-            dayCity.text(data.name + " " + moment().format('MM/DD/YYYY'))
+            dayCity.text(data.name);
+            dayCurrent.text(moment().format('dddd, MMM do'));
 
             fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + data.coord.lat + '&lon=' + data.coord.lon + '&exclude={part}&units=imperial&appid=ce12d6753030b472f33593ed904442cf')
                 //fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&exclude={part}&units=imperial&appid=${apikey}`)
@@ -60,9 +62,9 @@ function getAPI() {
                     dayHumidity.text('Humidity: ' + data2.current.humidity + '%');
 
                     fiveDayTemp.each(function(i) { $(this).text("Temp: " + data2.daily[i].temp.day) })
-                    fiveDayWind.each(function(i) { $(this).text("Temp: " + data2.daily[i].wind_speed) })
-                    fiveDayHumidity.each(function(i) { $(this).text("Temp: " + data2.daily[i].humidity) })
-                    fiveDayDate.each(function(i) { $(this).text(moment().add(1 + i, 'days').format("MM/DD/YYY")); });
+                    fiveDayWind.each(function(i) { $(this).text("Wind: " + data2.daily[i].wind_speed) })
+                    fiveDayHumidity.each(function(i) { $(this).text("Humidity: " + data2.daily[i].humidity) })
+                    fiveDayDate.each(function(i) { $(this).text(moment().add(1 + i, 'days').format("dddd")); });
                     fiveDayPhoto.each(function(i) { $(this).prepend("<img src=http://openweathermap.org/img/wn/" + data2.daily[i].weather[0].icon + "@2x.png />"); });
                 })
         })

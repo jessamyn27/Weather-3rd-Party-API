@@ -1,92 +1,124 @@
-        /* * {
+/* * {
     box-sizing: border-box;
 } */
-        
-        body {
-            font-family: Arial;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            justify-content: flex-start;
-            /* background: linear-gradient(0deg, rgba(19, 41, 61, 1) 0%, rgba(237, 245, 249, 1) 63%); */
-            padding: 20px;
-        }
-        
-        h1 {
-            font-size: 30px;
-            font-weight: 700;
-        }
-        
-        input {
-            margin-bottom: 15px;
-        }
-        
-        aside {
-            /* border: 2px solid blue; */
-            height: 600px;
-            margin: 0px;
-        }
-        
-        main {
-            /* border: 2px solid blue; */
-            align-content: flex-start;
-        }
-        
-        #day {
-            border: 2px solid rgb(124, 124, 124);
-            max-height: 250px;
-            width: 100%;
-            background: url="./asdfasd;f.png"
-        }
-        
-        .fiveDayWeather {
-            margin-bottom: 20px;
-            margin: 10px 20px 50px 10px;
-            justify-content: space-between;
-        }
-        
-        hr {
-            height: 3px !important;
-            color: slategray;
-            opacity: 1;
-        }
-        
-        .fiveDayWeather>h2 {
-            max-height: 50px;
-            font-weight: 700px !important;
-            font-size: 20px;
-        }
-        
-        .card {
-            padding: 10px 5px;
-            max-height: 275px;
-            margin: 10px;
-        }
-        
-        .card-title {
-            margin-bottom: 20px;
-        }
-        
-        .input-group-lg {
-            margin: 0px;
-        }
-        
-        .btn-primary {
-            background-color: #4985df;
-            border-color: #4985df;
-        }
-        
-        .btn-secondary {
-            margin: 13px;
-            width: 94%;
-        }
-        /* main {
+
+body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgb(232, 209, 233) 0%, rgba(237, 245, 249, 1) 63%);
+    padding: 20px;
+    color: #EC6E4D;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+input,
+input:focus,
+.form-control {
+    margin-bottom: 15px;
+    box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%);
+    background: rgba(232, 209, 233, .5);
+    border: 2px solid rgba(232, 209, 233);
+}
+
+aside {
+    /* border: 2px solid blue; */
+    height: 600px;
+    margin: 0px;
+}
+
+main {
+    /* border: 2px solid blue; */
+    align-content: flex-start;
+}
+
+#day {
+    border: 2px solid rgba(247, 226, 238, 0.4);
+    min-height: 275px;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(232, 209, 233) 0%, rgba(237, 245, 249, 1) 63%);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#fiveDayWeather {
+    margin-bottom: 20px;
+    /* margin: 10px 20px 50px 10px; */
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid rgba(247, 226, 238, 0.4);
+}
+
+hr {
+    height: 3px !important;
+    color: slategray;
+    opacity: 1;
+}
+
+#fiveDayWeather>h2 {
+    max-height: 50px;
+    font-weight: 700px !important;
+    font-size: 20px;
+    margin: 0 5px 0 5px;
+}
+
+.card {
+    /* padding: 10px 5px;
+    max-height: 275px;
+    margin: 10px; */
+    width: 19%;
+    height: 100%;
+    background-color: thistle;
+    border: 2px solid rgba(247, 226, 238, 0.4);
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+
+.input-group-lg {
+    margin: 0px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:target {
+    background-color: thistle;
+    border-color: thistle;
+    box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%);
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:target {
+    margin: 13px;
+    width: 94%;
+    margin: 0px;
+    background-color: thistle;
+    border-color: thistle;
+}
+
+
+/* main {
     justify-content: center;
     flex-direction: column;
     width: auto;
 } */
-        /* section {
+
+
+/* section {
     width: 200px;
     height: 450px;
     font-size: 25px;
@@ -99,7 +131,9 @@
     border-radius: 8px;
     width: 100%;
 } */
-        /* input {
+
+
+/* input {
     background: rgba(166, 208, 228, 0.8);
     height: 50px;
     margin-top: 20px;
@@ -109,7 +143,9 @@
     color: rgb(59, 85, 105);
     text-align: center;
 } */
-        /* li {
+
+
+/* li {
     list-style-type: none;
     color: #5295a9;
     text-align: center;
@@ -125,7 +161,9 @@
 #scoreContainer {
     display: none;
 } */
-        /* button {
+
+
+/* button {
     background: radial-gradient(circle, rgb(242, 202, 236) 0%, rgba(212, 160, 204, 0.954) 100%);
     border-radius: 8px;
     color: #052C44;
@@ -146,34 +184,38 @@
     text-align: center;
     vertical-align: center;
 } */
-        
-        header {
-            padding: 40px;
-            text-align: center;
-            color: #fff;
-            border-bottom: 30px #879274;
-        }
-        
-        header div {
-            list-style-type: none;
-            color: #8E080B;
-            max-width: 400px;
-            text-align: center;
-        }
-        /* 
+
+header {
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 30px #879274;
+}
+
+header div {
+    list-style-type: none;
+    color: #8E080B;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+/* 
 #scoreboardTitle {
     padding-left: 35px;
     display: none;
 } */
-        
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-        /* section div,
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/* section div,
 section button,
 #timerContainer {
     text-align: center;

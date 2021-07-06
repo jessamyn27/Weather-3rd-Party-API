@@ -1,0 +1,179 @@
+        /* * {
+    box-sizing: border-box;
+} */
+        
+        body {
+            font-family: Arial;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: flex-start;
+            /* background: linear-gradient(0deg, rgba(19, 41, 61, 1) 0%, rgba(237, 245, 249, 1) 63%); */
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        
+        input {
+            margin-bottom: 15px;
+        }
+        
+        aside {
+            /* border: 2px solid blue; */
+            height: 600px;
+            margin: 0px;
+        }
+        
+        main {
+            /* border: 2px solid blue; */
+            align-content: flex-start;
+        }
+        
+        #day {
+            border: 2px solid rgb(124, 124, 124);
+            max-height: 250px;
+            width: 100%;
+        }
+        
+        .fiveDayWeather {
+            margin-bottom: 20px;
+            margin: 10px 20px 50px 10px;
+            justify-content: space-between;
+        }
+        
+        hr {
+            height: 3px !important;
+            color: slategray;
+            opacity: 1;
+        }
+        
+        .fiveDayWeather>h2 {
+            max-height: 50px;
+            font-weight: 700px !important;
+            font-size: 20px;
+        }
+        
+        .card {
+            padding: 10px 5px;
+            max-height: 275px;
+            margin: 10px;
+        }
+        
+        .card-title {
+            margin-bottom: 20px;
+        }
+        
+        .input-group-lg {
+            margin: 0px;
+        }
+        
+        .btn-primary {
+            background-color: #4985df;
+            border-color: #4985df;
+        }
+        
+        .btn-secondary {
+            margin: 13px;
+            width: 94%;
+        }
+        /* main {
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+} */
+        /* section {
+    width: 200px;
+    height: 450px;
+    font-size: 25px;
+    border: 15px solid rgb(142, 186, 223, .25);
+    color: #8E080B;
+    flex: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    background: rgb(34, 144, 194, .8);
+    border-radius: 8px;
+    width: 100%;
+} */
+        /* input {
+    background: rgba(166, 208, 228, 0.8);
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    color: rgb(59, 85, 105);
+    text-align: center;
+} */
+        /* li {
+    list-style-type: none;
+    color: #5295a9;
+    text-align: center;
+}
+
+#reStartButton {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reStartButton,
+#quizContainer,
+#scoreContainer {
+    display: none;
+} */
+        /* button {
+    background: radial-gradient(circle, rgb(242, 202, 236) 0%, rgba(212, 160, 204, 0.954) 100%);
+    border-radius: 8px;
+    color: #052C44;
+    cursor: pointer;
+    font-size: 25px;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 5px 20px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin: 15px;
+    border: 5px solid rgba(183, 186, 233, 0.25);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+} */
+        
+        header {
+            padding: 40px;
+            text-align: center;
+            color: #fff;
+            border-bottom: 30px #879274;
+        }
+        
+        header div {
+            list-style-type: none;
+            color: #8E080B;
+            max-width: 400px;
+            text-align: center;
+        }
+        /* 
+#scoreboardTitle {
+    padding-left: 35px;
+    display: none;
+} */
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        /* section div,
+section button,
+#timerContainer {
+    text-align: center;
+}  */

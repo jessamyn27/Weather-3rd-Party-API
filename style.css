@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 body {
     font-family: Arial;
@@ -9,9 +9,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background: linear-gradient(0deg, rgb(232, 209, 233) 0%, rgba(237, 245, 249, 1) 63%);
+    background: linear-gradient(0deg, rgb(168, 174, 211) 0%, rgba(237, 245, 249, 1) 63%);
     padding: 20px;
     color: #EC6E4D;
+    text-align: center;
+}
+
+#recentSearch>h1,
+main>h1 {
+    margin: 30px 0 10px 0;
 }
 
 h1 {
@@ -23,9 +29,14 @@ input,
 input:focus,
 .form-control {
     margin-bottom: 15px;
-    box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%);
-    background: rgba(232, 209, 233, .5);
-    border: 2px solid rgba(232, 209, 233);
+    /* box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%); */
+    background-color: #9EBDE2;
+    border: none;
+    color: #EC6E4D !important;
+}
+
+::placeholder {
+    color: #eedcd7 !important;
 }
 
 aside {
@@ -40,13 +51,15 @@ main {
 }
 
 #day {
-    border: 2px solid rgba(247, 226, 238, 0.4);
+    /* border: 2px solid rgba(247, 226, 238, 0.4); */
+    border: none;
     min-height: 275px;
     width: 100%;
-    background: linear-gradient(0deg, rgb(232, 209, 233) 0%, rgba(237, 245, 249, 1) 63%);
+    /* background: linear-gradient(0deg, rgb(232, 209, 233) 0%, rgba(237, 245, 249, 1) 63%); */
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 10px;
+    background-color: thistle;
 }
 
 #fiveDayWeather {
@@ -56,7 +69,6 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 2px solid rgba(247, 226, 238, 0.4);
 }
 
 hr {
@@ -79,7 +91,9 @@ hr {
     width: 19%;
     height: 100%;
     background-color: thistle;
-    border: 2px solid rgba(247, 226, 238, 0.4);
+    /* border: 2px solid rgba(247, 226, 238, 0.4); */
+    border: none;
+    border-radius: 10px;
 }
 
 .card-title {
@@ -94,9 +108,10 @@ hr {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:target {
-    background-color: thistle;
+    background-color: #EC6E4D;
     border-color: thistle;
-    box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%);
+    /* box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%); */
+    border: none;
 }
 
 .btn-secondary,
@@ -106,84 +121,10 @@ hr {
     margin: 13px;
     width: 94%;
     margin: 0px;
-    background-color: thistle;
-    border-color: thistle;
+    background-color: rgb(158, 189, 226);
+    /* border-color: thistle; */
+    border: none;
 }
-
-
-/* main {
-    justify-content: center;
-    flex-direction: column;
-    width: auto;
-} */
-
-
-/* section {
-    width: 200px;
-    height: 450px;
-    font-size: 25px;
-    border: 15px solid rgb(142, 186, 223, .25);
-    color: #8E080B;
-    flex: 0 auto;
-    padding: 20px;
-    margin-top: 50px;
-    background: rgb(34, 144, 194, .8);
-    border-radius: 8px;
-    width: 100%;
-} */
-
-
-/* input {
-    background: rgba(166, 208, 228, 0.8);
-    height: 50px;
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 20px;
-    color: rgb(59, 85, 105);
-    text-align: center;
-} */
-
-
-/* li {
-    list-style-type: none;
-    color: #5295a9;
-    text-align: center;
-}
-
-#reStartButton {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#reStartButton,
-#quizContainer,
-#scoreContainer {
-    display: none;
-} */
-
-
-/* button {
-    background: radial-gradient(circle, rgb(242, 202, 236) 0%, rgba(212, 160, 204, 0.954) 100%);
-    border-radius: 8px;
-    color: #052C44;
-    cursor: pointer;
-    font-size: 25px;
-    letter-spacing: 0.21px;
-    line-height: 16px;
-    max-width: 255px;
-    padding: 5px 20px;
-    text-align: center;
-    transition-duration: 0.15s;
-    transition-property: background-color;
-    transition-timing-function: linear;
-    margin: 15px;
-    border: 5px solid rgba(183, 186, 233, 0.25);
-    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-    height: 50px;
-    text-align: center;
-    vertical-align: center;
-} */
 
 header {
     padding: 40px;
@@ -199,13 +140,6 @@ header div {
     text-align: center;
 }
 
-
-/* 
-#scoreboardTitle {
-    padding-left: 35px;
-    display: none;
-} */
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -214,9 +148,26 @@ main {
     padding-right: 5%;
 }
 
+@media screen and (max-width: 1000px) {
+    #fiveDayWeather {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        height: 300px;
+        margin: 10px;
+    }
+}
 
-/* section div,
-section button,
-#timerContainer {
-    text-align: center;
-}  */
+@media screen and (max-width: 800px) {
+    #fiveDayWeather {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        height: 330px;
+        margin: 10px;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+}

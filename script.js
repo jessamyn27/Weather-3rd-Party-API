@@ -4,10 +4,12 @@ console.log('weather dashboard app');
 var apikey = 'ce12d6753030b472f33593ed904442cf';
 
 // current day variables
-var userInput = $('#userInfo');
+var userInput = $('#userInput').val();
+// var buttonInfo = $('#buttonInfo').html();
 
 // input HTML variable
 var submitBtn = $('#submitBtn');
+var btnSecondary = $('#btnSecondary');
 var recentSearch = $('#recentSearch');
 
 // one day weather variables
@@ -32,7 +34,12 @@ var fiveDayHumidity = $('.fiveDayHumidity');
 var saveCity = [];
 
 submitBtn.click(function() {
-    userInput = $('#userInfo').val();
+    userInput = $('#userInput').val();
+    getAPI();
+})
+
+btnSecondary.click(function() {
+    userInput = $('#btnSecondary').html();
     getAPI();
 })
 

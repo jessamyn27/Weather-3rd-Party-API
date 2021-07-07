@@ -9,13 +9,17 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background: linear-gradient(0deg, rgb(168, 174, 211) 0%, rgba(237, 245, 249, 1) 63%);
+    background: linear-gradient(180deg, #c0d7ed, #e3cddf, #f1e398, #e3cddf, #c0d7ed);
+    background-size: 300% 300%;
     padding: 20px;
     color: #EC6E4D;
     text-align: center;
 }
 
-#recentSearch>h1,
+#recentSearch {
+    margin-right: 20px;
+}
+
 main>h1 {
     margin: 30px 0 10px 0;
 }
@@ -25,11 +29,14 @@ h1 {
     font-weight: 700;
 }
 
+button+h1 {
+    margin-top: 30px;
+}
+
 input,
 input:focus,
 .form-control {
     margin-bottom: 15px;
-    /* box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%); */
     background-color: #9EBDE2;
     border: none;
     color: #EC6E4D !important;
@@ -40,31 +47,33 @@ input:focus,
 }
 
 aside {
-    /* border: 2px solid blue; */
     height: 600px;
     margin: 0px;
 }
 
 main {
-    /* border: 2px solid blue; */
     align-content: flex-start;
 }
 
 #day {
-    /* border: 2px solid rgba(247, 226, 238, 0.4); */
     border: none;
     min-height: 275px;
     width: 100%;
-    /* background: linear-gradient(0deg, rgb(232, 209, 233) 0%, rgba(237, 245, 249, 1) 63%); */
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 10px;
     background-color: thistle;
 }
 
+#dayUV {
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
 #fiveDayWeather {
     margin-bottom: 20px;
-    /* margin: 10px 20px 50px 10px; */
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -85,13 +94,9 @@ hr {
 }
 
 .card {
-    /* padding: 10px 5px;
-    max-height: 275px;
-    margin: 10px; */
     width: 19%;
     height: 100%;
     background-color: thistle;
-    /* border: 2px solid rgba(247, 226, 238, 0.4); */
     border: none;
     border-radius: 10px;
 }
@@ -110,7 +115,6 @@ hr {
 .btn-primary:target {
     background-color: #EC6E4D;
     border-color: thistle;
-    /* box-shadow: 0 0 0 0.25rem rgb(216 191 216 / 50%); */
     border: none;
 }
 
@@ -118,11 +122,9 @@ hr {
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:target {
-    margin: 13px;
-    width: 94%;
-    margin: 0px;
+    margin: 13px!important;
+    width: 94% i !important;
     background-color: rgb(158, 189, 226);
-    /* border-color: thistle; */
     border: none;
 }
 
@@ -153,9 +155,10 @@ main {
         flex-direction: column;
     }
     .card {
-        width: 100%;
+        width: 40%;
         height: 300px;
-        margin: 10px;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -164,9 +167,10 @@ main {
         flex-direction: column;
     }
     .card {
-        width: 100%;
+        width: 80%;
         height: 330px;
-        margin: 10px;
+        margin: auto;
+        margin-bottom: 20px;
         font-size: 20px;
         padding-bottom: 15px;
     }

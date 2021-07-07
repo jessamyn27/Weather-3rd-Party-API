@@ -8,7 +8,7 @@
 **[Wireframes](#Wireframes)**<br>
 **[Bugs and Known Issues](#Bugs-and-Known-Issues)**<br>
 **[Next Steps to Continue](#Next-Steps-to-Continue)**<br>
-**[Wireframes OR SudoCode of Acceptance Criteria](#Wireframes-OR-SudoCode-of-Acceptance-Criteria)**<br>
+**[SudoCode of Acceptance Criteria](#SudoCode-of-Acceptance-Criteria)**<br>
 **[Acceptance Criteria](#Acceptance-Criteria)**<br>
 **[Bonus](#Bonus)**<br>
 **[Deliverables](#Deliverables)**<br>
@@ -27,6 +27,9 @@
 # ![](screenshot-3.png)
 # ![](screenshot-4.png)
 
+## Wireframes
+* n/a
+
 ## Bugs and Known Issues
 
 - clicking on already searched cities replaces the button, would be better to maintain and not clear until user does another search
@@ -38,8 +41,8 @@
 - hover and click IU could use color or highlight change
 - animation or background changing based on current day weather would be cool
 
-## Wireframes OR SudoCode of Acceptance Criteria
-N/A
+##SudoCode of Acceptance Criteria
+* n/a
 
 ## Acceptance Criteria
 
@@ -119,5 +122,5 @@ You are required to submit BOTH of the following for review:
 [MIT License](https://opensource.org/licenses/MIT)
 
 
-**[Back Up To Top](#WWeather-3rd-Party-API)**
+**[Back Up To Top](#Weather-3rd-Party-API)**
 

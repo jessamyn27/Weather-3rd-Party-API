@@ -41,7 +41,7 @@
 - hover and click IU could use color or highlight change
 - animation or background changing based on current day weather would be cool
 
-##SudoCode of Acceptance Criteria
+## SudoCode of Acceptance Criteria
 * n/a
 
 ## Acceptance Criteria
